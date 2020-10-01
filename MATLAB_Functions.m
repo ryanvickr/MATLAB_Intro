@@ -1,4 +1,6 @@
-% 2nd MATLAB Intro
+% MATLAB Functions
+
+
 % test values
 v = [1, 2, 4];
 mn = vecMean(v); % test the first function
