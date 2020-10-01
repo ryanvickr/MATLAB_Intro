@@ -18,6 +18,9 @@ col_vector = [1; 4; 5]
 matrix = [1, 2, 3;
           4, 5, 6;
           7, 8, 9]
+matrix2 = [1, 2, 3;
+           4, 5, 6;
+           7, 8, 9];
 % create a 'n'x'n' matrix of ones
 n = 3;
 ones_matrix = ones(n)
@@ -40,3 +43,18 @@ matrix(1,2) % REMEMBER, MATLAB starts indexes from 1, NOT 0!!!
 matrix(2,:)
 % get rows 2->3 of a matrix
 matrix(2:3,:)
+
+%-----Mathematical Operations-----
+% addition and subtraction are done the same - you need to keep
+% of whether or not two variables are the same type!
+% adding two vectors
+row_vector + row_vector2
+
+% multiplication and division has 2 different methods
+% 1) element-by-element multiplication/division (dot product)
+matrix.*matrix2 % multiplication
+matrix./matrix2 % division
+
+% 2) regular matrix multiplcation/divison (omit the '.')
+matrix*matrix2
+matrix/matrix2
